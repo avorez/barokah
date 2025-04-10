@@ -1,0 +1,95 @@
+body {
+  font-family: 'Lora', serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c5f2d;
+}
+
+.actions {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  background: #2c5f2d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#struk-preview {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#struk-list div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.struk-actions {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.struk-actions button {
+  margin: 5px;
+}
+
+.riwayat-popup #riwayat-list > div {
+  background: #eee;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+.riwayat-popup button {
+  margin-left: 8px;
+}

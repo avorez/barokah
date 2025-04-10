@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warung Barokah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>Warung Barokah</h1>
+
+  <div class="actions">
+    <button class="checkout">Checkout</button>
+    <button class="lihat-riwayat">Riwayat</button>
+  </div>
+
+  <div id="popup-struk" class="popup hidden">
+    <div class="popup-content struk-popup">
+      <button class="close" onclick="tutupPopup()">×</button>
+      <div id="struk-preview">
+        <h2>Struk Belanja – Warung Barokah</h2>
+        <p>Jl. Cempaka Raya (Samping awa fried chicken dan samping praktek dr. Syaiful Anam / Simpang gang mmayang murai)</p>
+        <p id="struk-waktu"></p>
+        <div id="struk-list"></div>
+        <hr>
+        <p><strong>Total: <span id="struk-total"></span></strong></p>
+      </div>
+      <div class="struk-actions">
+        <button onclick="downloadStrukTXT()">Download TXT</button>
+        <button onclick="downloadStrukPDF()">Download PDF</button>
+        <button onclick="printStruk()">Print</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-riwayat" class="popup hidden">
+    <div class="popup-content riwayat-popup">
+      <button class="close" onclick="tutupPopup()">×</button>
+      <h3>Riwayat Transaksi</h3>
+      <div id="riwayat-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
